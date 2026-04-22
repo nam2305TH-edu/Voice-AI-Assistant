@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Voice to Text</title>
+    <script src="./script/voice.js?v=3" defer></script>
+</head>
+
+<body>
+    <h1>Voice to Text</h1>
+    <h1>Heeko</h1>
+    <p>Status: <span id="status">Đang khởi động...</span></p>
+    <button id="toggleBtn" onclick="toggleListening()">Bắt đầu</button>
+    <button onclick="clearText()">Xóa</button>
+    <button onclick="searchAndSpeak()">🔍 Tìm & Đọc</button>
+    <button id="autoBtn" onclick="toggleAutoMode()" style="background:#4CAF50;color:white;padding:5px 10px;border:none;cursor:pointer;">🤖 Auto: BẬT</button>
+    <hr>
+    <p><b>Đang nói:</b></p>
+    <p id="partial">...</p>
+    <p><b>Full text:</b></p>
+    <p id="fullText">Hãy nói gì đó...</p>
+    <hr>
+    <p><b>Trả lời:</b></p>
+    <p id="answer" style="color: green;">...</p>
+    <hr>
+    <p style="font-size:12px;color:#666;">💡 Chế độ Auto: Im lặng 2 giây → Tự động tìm kiếm & đọc → Mở lại mic</p>
+    <hr>
+    <h3>Upload file (max 30s)</h3>
+    <input type="file" id="audioFile" accept=".wav,.mp3,.m4a">
+    <button onclick="uploadFile()">Upload</button>
+    <p id="uploadResult"></p>
+    <hr>
+    <p>Debug: <span id="debug" style="color:red;"></span></p>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+ENV/
+md/
+
+*.sqlite3
+
+
+# Whisper temp audio
+temp_audio/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+.env 
+.env 
+data/ 
